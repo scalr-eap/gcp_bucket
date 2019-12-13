@@ -5,6 +5,6 @@ provider "google" {
 }
 
 resource "google_storage_bucket" "sample" {
-  name     = "my-test-bucket"
+  name     = var.name
   location = "US"
 }
